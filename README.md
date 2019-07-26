@@ -158,7 +158,6 @@ As part of this project, you must use this API to access film review data.  The 
 * [SQLite](https://www.sqlite.org/docs.html)
 
 ---
-
 ## What To Turn In
 
 The FreshPotatoes tech team will look for:
