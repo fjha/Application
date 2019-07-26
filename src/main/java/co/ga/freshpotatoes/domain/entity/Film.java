@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "films")
-public class Film {
+public class Film implements Comparable<Film>{
     private long id;
     private Genre genre;
     private String title;
@@ -166,4 +166,12 @@ public class Film {
         }
         return result;
     }
+
+  
+	public int compareTo(Film film) {
+		// TODO Auto-generated method stub
+		int returnId=(int) (id-film.id);
+		return returnId;
+	}
+	
 }
