@@ -48,8 +48,7 @@ public class FilmsController {
   {
 	  //This will film
 	  Film film=  filmRepository.findOne(film_id);
-        
-          
+                
       
 	 /* 
 	  String releaseDate=film.getReleaseDate();
