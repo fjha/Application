@@ -1,10 +1,17 @@
 package co.ga.freshpotatoes.domain.entity;
 
 import javax.persistence.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
 import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
+import co.ga.freshpotatoes.domain.repository.FilmRepository;
 
 @Entity
 @Table(name = "films")
@@ -173,5 +180,8 @@ public class Film implements Comparable<Film>{
 		int returnId=(int) (id-film.id);
 		return returnId;
 	}
+	
+	
+	
 	
 }

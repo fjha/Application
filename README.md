@@ -179,3 +179,33 @@ Email your work in a GitHub repository or Google Drive or Dropbox folder.
 #### Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
 All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
+
+
+#########
+ Criteria
+
+All the Criteria have been implemented with Pagination and Error Handling.
+Example : http://localhost:8080/recommendations/7795/5/20
+Build on GET  request /recommendations/{film_id}/{page}/{size}
+Will have input parameter {film_id}
+Page parameter {page}
+Size parameter {size}
+Explanation: The given GET request will return total 97 Films.
+The application displays messages if there is missing url or not well formed url.
+
+http://localhost:8080/films/genre
+ 
+http://localhost:8080//films/repository
+ 
+http://localhost:8080/films/recommendation/7795/1/70
+ 
+http://localhost:8080/films/recommendation/7795/1/7
+ 
+http://localhost:8080/films/recommendation/7795/2/7
+ 
+
+
+
+
+
+
